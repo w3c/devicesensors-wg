@@ -85,7 +85,7 @@
           Implementations</a> | <a href=
           "http://www.w3.org/2009/dap/wiki/Main_Page#Work_Documentation">WG
           Notes and Checklists</a> | <a href=
-          "http://www.w3.org/2009/dap/wiki/Main_Page">DAP wiki</a> | <a href=
+          "http://www.w3.org/2009/dap/wiki/Main_Page">DAS wiki</a> | <a href=
           "http://www.w3.org/2008/webapps/wiki/Main_Page">WebApps WG</a> |
           <a href="http://www.w3.org/html/wg/">HTML WG</a>
         </dd>
@@ -179,14 +179,13 @@
         </thead>
         <tbody>
           <tr>
-            <td colspan="9" class="tbody_title">
+            <td id="sensors" colspan="9" class="tbody_title">
               Sensors
             </td>
           </tr>
           <tr>
             <th scope="row">
-              <strong>Generic Sensor</strong><br>
-              (blueprint for concrete sensors)
+              <strong>Generic Sensor API</strong><br>
             </th>
             <td>
               <a href="https://w3c.github.io/sensors/">Editor's Draft</a><br>
@@ -197,7 +196,9 @@
             </td>
             <td colspan="4"></td>
             <td></td>
-            <td></td>
+            <td>
+              Generic Sensor API is the blueprint for concrete sensors
+            </td>
           </tr>
           <tr>
             <th scope="row">
@@ -211,13 +212,13 @@
             <td class="current">
               <a href="https://www.w3.org/TR/ambient-light/">29 Mar 2016</a>
             </td>
-            <td></td>
-            <td></td>
-            <td colspan="2"></td>
+            <td colspan="4"></td>
             <td>
               <a href="http://w3c-test.org/ambient-light/">incomplete</a>
             </td>
-            <td></td>
+            <td rowspan="5">
+              These concrete sensors are recast upon the Generic Sensor API
+            </td>
           </tr>
           <tr>
             <th scope="row">
@@ -227,26 +228,9 @@
               <a href="https://w3c.github.io/proximity/">Editor's Draft</a><br>
               (<a href="https://github.com/w3c/proximity/">GitHub</a>)
             </td>
-            <td colspan="1">
-              <a href="http://www.w3.org/TR/2012/WD-proximity-20120712/">12
-              July 2012</a>
-            </td>
+            <td colspan="5"></td>
             <td>
-              <a href="%20http://www.w3.org/TR/2015/WD-proximity-20150903/">3
-              Sept 2015</a>
-            </td>
-            <td>
-              <a href="http://www.w3.org/TR/2013/CR-proximity-20131001/">1 Oct
-              2013</a>
-            </td>
-            <td colspan="2"></td>
-            <td>
-              <a href="http://w3c-test.org/proximity/">reviewed, but
-              incomplete</a>
-            </td>
-            <td>
-              Will be recast to be based upon the <a href=
-              "https://w3c.github.io/sensors/">Generic Sensor API</a>
+              <a href="http://w3c-test.org/proximity/">obsoleted</a>
             </td>
           </tr>
           <tr>
@@ -254,21 +238,45 @@
               <strong>Accelerometer Sensor</strong>
             </th>
             <td>
-              (work to be started)
+              (work to be started) <!--
+              <a href="https://w3c.github.io/accelerometer/">Editor's
+              Draft</a><br>
+              (<a href="https://github.com/w3c/accelerometer/">GitHub</a>)
+              -->
             </td>
-            <td colspan="7"></td>
+            <td colspan="5"></td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">
-              <strong>Orientation Sensor</strong>
+              <strong>Gyroscope Sensor</strong>
             </th>
             <td>
-              (work to be started)
+              (work to be started) <!--
+              <a href="https://w3c.github.io/gyroscope/">Editor's
+              Draft</a><br>
+              (<a href="https://github.com/w3c/gyroscope/">GitHub</a>)
+              -->
             </td>
-            <td colspan="7"></td>
+            <td colspan="5"></td>
+            <td></td>
           </tr>
           <tr>
-            <td colspan="9" class="tbody_title">
+            <th scope="row">
+              <strong>Magnetometer Sensor</strong>
+            </th>
+            <td>
+              (work to be started) <!--
+              <a href="https://w3c.github.io/magnetometer/">Editor's
+              Draft</a><br>
+              (<a href="https://github.com/w3c/magnetometer/">GitHub</a>)
+              -->
+            </td>
+            <td colspan="5"></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td id="devices" colspan="9" class="tbody_title">
               Devices
             </td>
           </tr>
@@ -336,9 +344,7 @@
             <td>
               <a href="http://w3c-test.org/battery-status/">approved</a>
             </td>
-            <td>
-              transition to PR expected in April 2016
-            </td>
+            <td></td>
           </tr>
           <tr>
             <th scope="row">
@@ -356,7 +362,7 @@
             <td></td>
           </tr>
           <tr>
-            <td colspan="9" class="tbody_title">
+            <td id="media-capture" colspan="9" class="tbody_title">
               Media Capture
             </td>
           </tr>
@@ -409,12 +415,17 @@
               "http://www.w3.org/TR/2015/WD-mediacapture-streams-20150212/">12
               Feb 2015</a>
             </td>
-            <td class="current">
+            <td>
               <a href=
               "http://www.w3.org/TR/2015/WD-mediacapture-streams-20150414/">4
               Apr 2015</a>
             </td>
-            <td colspan="3"></td>
+            <td class="current">
+              <a href=
+              "https://www.w3.org/TR/2016/CR-mediacapture-streams-20160519/">19
+              May 2016</a>
+            </td>
+            <td colspan="2"></td>
             <td>
               <a href="http://w3c-test.org/mediacapture-streams/">draft</a>
             </td>
@@ -438,9 +449,8 @@
               alt="Activity on MediaRecorder editor draft">
             </td>
             <td class="current">
-              <a href=
-              "http://www.w3.org/TR/2015/WD-mediastream-recording-20150127/">27
-              Jan 2015</a>
+              <a href="https://www.w3.org/TR/mediastream-recording/">20 June
+              2016</a>
             </td>
             <td colspan="5"></td>
             <td>
@@ -453,8 +463,7 @@
               (taking still images from a camera streams)
             </th>
             <td>
-              <a href=
-              "http://w3c.github.io/mediacapture-image/index.html">Editor's
+              <a href="https://w3c.github.io/mediacapture-image/">Editor's
               Draft</a><br>
               (<a href=
               "https://github.com/w3c/mediacapture-image/">GitHub</a>)<br>
@@ -463,8 +472,7 @@
               alt="Activity on MediaStream Image Capture Editor draft">
             </td>
             <td class="current">
-              <a href="http://www.w3.org/TR/2015/WD-image-capture-20150127/">27
-              Jan 2015</a>
+              <a href="http://www.w3.org/TR/image-capture/">31 May 2016</a>
             </td>
             <td colspan="5"></td>
             <td>
@@ -487,9 +495,8 @@
               "Activity on editor draft of Media Capture Depth Stream Extensions">
               </td>
             <td class="current">
-              <a href=
-              "http://www.w3.org/TR/2015/WD-mediacapture-depth-20150129/">29
-              Jan 2015</a>
+              <a href="https://www.w3.org/TR/mediacapture-depth/">31 May
+              2016</a>
             </td>
             <td colspan="5"></td>
             <td>
@@ -517,7 +524,7 @@
             </td>
           </tr>
           <tr>
-            <td colspan="9" class="tbody_title">
+            <td id="other" colspan="9" class="tbody_title">
               Other
             </td>
           </tr>
