@@ -84,8 +84,8 @@ DESCRIPTION:https://www.w3.org/2009/dap/wiki/LisbonF2F2016
 END:VEVENT
 BEGIN:VEVENT
 CREATED:20160525T134131Z
-LAST-MODIFIED:20170630T072818Z
-DTSTAMP:20170630T072818Z
+LAST-MODIFIED:20170807T130503Z
+DTSTAMP:20170807T130503Z
 UID:ff5c4ef0-2f08-405d-b64b-2ab7144cca9c
 SUMMARY:Device and Sensors Working Group Teleconference
 RRULE:FREQ=WEEKLY;INTERVAL=2
@@ -102,13 +102,11 @@ X-MOZ-LASTACK:20170630T072415Z
 DTSTART;TZID=America/New_York:20160602T100000
 DTEND;TZID=America/New_York:20160602T110000
 TRANSP:OPAQUE
-DESCRIPTION:IRC channel:  irc://irc.w3.org:6667/dap\n\nWebEx Meeting link:
-  https://mit.webex.com/mit/j.php?MTID=me65c69ef291cb61364dec7b003a2f745\n\
- nWebEx logistics\, see https://lists.w3.org/Archives/Member/member-device-
- apis/2015Nov/0000.html (member only)\n\nDial in directly: +1-617-324-0000 
- with access code 646 492 751\n\n
+DESCRIPTION:IRC channel:  irc://irc.w3.org:6667/dap\n\nFor Webex details\,
+  see https://lists.w3.org/Archives/Member/w3c-archive/2017Aug/0111.html\n\
+ n
 SEQUENCE:10
-X-MOZ-GENERATION:53
+X-MOZ-GENERATION:54
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER;VALUE=DURATION:-PT5M
