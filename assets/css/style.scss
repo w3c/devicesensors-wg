@@ -2,3 +2,23 @@
 ---
 
 @import "{{ site.theme }}";
+
+header ul {
+    background: #1a5e9a;
+    border-width: .65rem .7rem .6rem;
+}
+
+header ul:before {
+    bottom: -45px;
+}
+
+header ul li {
+    display: block;
+    border: solid #1a5e9a;
+    border-width: .65rem .7rem .6rem;
+    border-radius: .4rem;
+    background: #1a5e9a;
+    color: white;
+    font-weight: bold;
+    height: 58px;
+}
