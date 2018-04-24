@@ -30,3 +30,43 @@ header ul li {
 header p {
     width: auto;
 }
+
+@media print, screen and (max-width: 740px){
+    body {
+        padding: 0;
+    }
+    .wrapper {
+        border-radius:0;
+        box-shadow: none;
+        width:100%;
+    }
+    footer {
+        border-radius: 0;
+        padding: 20px;
+        width: auto;
+    }
+    footer p {
+        float: none;
+        margin: 0;
+    }
+    footer p+p {
+        float:none
+    }
+}
+@media print, screen and (max-width: 580px) {
+    header ul {
+        display: none;
+    }
+    header p.view {
+        display: block;
+    }
+    header p {
+        width: 100%;
+    }
+    #roadmap > div:not(.spec) {
+        display: none;
+    }
+    #roadmap {
+        display: block !important;
+    }
+}
