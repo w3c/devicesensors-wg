@@ -1,0 +1,7 @@
+pages:
+
+- title: Home
+  url: site.baseurl
+
+- title: History
+  url: history
