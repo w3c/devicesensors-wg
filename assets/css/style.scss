@@ -9,7 +9,7 @@ header ul {
 }
 
 header ul:before {
-    bottom: -45px;
+    bottom: -52px;
 }
 
 header ul li {
@@ -20,5 +20,10 @@ header ul li {
     background: #1a5e9a;
     color: white;
     font-weight: bold;
-    height: 58px;
+    height: 64px;
+}
+
+header p {
+    width: auto;
+    padding-right: 120px;
 }

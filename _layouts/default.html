@@ -16,10 +16,10 @@
   </head>
   <body>
     <div class="wrapper">
-      <header {% unless site.description or site.github.project_tagline %} class="without-description" {% endunless %}>
+      <header {% unless site.description %} class="without-description" {% endunless %}>
         <h1>{{ site.title }}</h1>
-        {% if site.description or site.github.project_tagline %}
-          <p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% if site.description %}
+          <p>{{ site.description }}</p>
         {% endif %}
         <!--p class="logo"><a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" height="48" width="72"></a></p-->
         <!--p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ github_name }}</small></a></p-->
@@ -29,7 +29,7 @@
           <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
         {% endif %}
           <!--li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li-->
-          <li><a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" height="48" width="72"></a></li>
+          <li><a href="https://www.w3.org/"><img alt="W3C" src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" height="58" width="72"></a></li>
 
         </ul>
       </header>

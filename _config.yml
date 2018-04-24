@@ -4,5 +4,5 @@ email: public-device-apis@w3.org
 description: > # this means to ignore newlines until "theme:"
   The Devices and Sensors Working Group creates client-side APIs that enable
   the development of Web Applications that interact with device hardware and
-  sensors such as cameras, microphones, and motion sensors.
+  sensors.
 theme: jekyll-theme-modernist
