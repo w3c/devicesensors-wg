@@ -12,6 +12,10 @@ header ul:before {
     bottom: -52px;
 }
 
+header ul a {
+    padding: 0;
+}
+
 header ul li {
     display: block;
     border: solid #1a5e9a;
