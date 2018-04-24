@@ -14,9 +14,13 @@ layout: default
     }
 
     #roadmap > div {
-        border-radius: 25px;
         padding: 10px;
         margin: 5px;
+    }
+
+    #roadmap shadow {
+        box-shadow: 0.3em 0.3em 0 rgba(0,0,0,.1);
+        border: 1px solid #ccc;
     }
 
     .gh {
@@ -27,37 +31,67 @@ layout: default
     }
 
     #roadmap > .header {
+        border-radius: 25px;
         width: 120px;
         height: 1.6em;
         transform: rotate(-35deg);
-	    transform-origin: 15% 50%;
+        transform-origin: 15% 50%;
+    }
+
+    div.done:before {
+        content: "\00bb";
+        font-size: 1.5em;
+    }
+
+    #roadmap > .subheader {
+        grid-column: auto / span 7;
+    }
+
+    #roadmap > .subheader > span {
+        color:#61778B;
+        font-size: 13px;
+    }
+
+    #roadmap > div.current, #roadmap > div.current:visited {
+        font-weight: bold;
+        background-color: #afa;
+        box-shadow: 0.3em 0.3em 0 rgba(0,0,0,.1);
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
     #roadmap > div.ed {
         background-color: rgba(226, 169, 169, 0.7);
     }
+
     #roadmap > div.wd {
         background: rgba(250, 250, 164, 0.7);
     }
+
     #roadmap > div.sd {
         background: rgba(168, 238, 168, 0.7);
     }
+
     #roadmap > div.cr {
         background: rgba(151, 203, 240, 0.7);
     }
+
     #roadmap > div.pr {
         background: rgba(16, 111, 179, 0.7);
         color: white;
     }
+
     #roadmap > div.rec {
         background: rgba(0, 91, 156, 1);
         color: white;
     }
+
 </style>
 
 <h2>Roadmap</h2>
 
 <div id="roadmap">
+
     <div></div>
     <div class="ed header">Editor's Draft</div>
     <div class="wd header">Working Draft</div>
@@ -66,11 +100,110 @@ layout: default
     <div class="pr header">Proposed Rec</div>
     <div class="rec header">Recommendation</div>
 
+    <div class="subheader">Sensor Framework <span>An abstract base class extended by concrete sensors.</span></div>
+
     <div><a href="https://w3c.github.io/sensors/">Generic Sensor API</a><br><a href="https://github.com/w3c/sensors" class="gh">w3c/sensors</a></div>
     <div><a href="https://w3c.github.io/sensors/">Editor's Draft</a></div>
-    <div>&raquo;</div>
+    <div class="done"></div>
     <div><a href="https://www.w3.org/TR/2017/WD-generic-sensor-20171018/">18 Oct 2017</a></div>
-    <div><a href="https://www.w3.org/TR/2018/CR-generic-sensor-20180320/">20 Mar 2018</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-generic-sensor-20180320/">20 Mar 2018</a></div>
     <div>Q4 2019</div>
     <div>Q1 2020</div>
+
+    <div class="subheader">Motion Sensors <span>Low-level motion sensors that extend the Generic Sensor API.</span></div>
+
+    <div><a href="https://w3c.github.io/accelerometer/">Accelerometer</a><br><a href="https://github.com/w3c/accelerometer" class="gh">w3c/accelerometer</a></div>
+    <div><a href="https://w3c.github.io/accelerometer/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-accelerometer-20171018/">18 Oct 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-accelerometer-20180320/">20 Mar 2018</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/gyroscope/">Gyroscope</a><br><a href="https://github.com/w3c/gyroscope" class="gh">w3c/gyroscope</a></div>
+    <div><a href="https://w3c.github.io/gyroscope/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-gyroscope-20171018/">18 Oct 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-gyroscope-20180320/">20 Mar 2018</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/magnetometer/">Magnetometer</a><br><a href="https://github.com/w3c/magnetometer" class="gh">w3c/magnetometer</a></div>
+    <div><a href="https://w3c.github.io/magnetometer/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-magnetometer-20171018/">18 Oct 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-magnetometer-20180320/">20 Mar 2018</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/orientation-sensor/">Orientation Sensor</a><br><a href="https://github.com/w3c/orientation-sensor" class="gh">w3c/orientation-sensor</a></div>
+    <div><a href="https://w3c.github.io/orientation-sensor/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-orientation-sensor-20171018/">18 Oct 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-orientation-sensor-20180320/">20 Mar 2018</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/motion-sensors/">Motion Sensors Explainer</a><br><a href="https://github.com/w3c/motion-sensors" class="gh">w3c/motion-sensors</a></div>
+    <div><a href="https://w3c.github.io/motion-sensors/">Editor's Draft</a></div>
+    <div class="current wd"><a href="https://www.w3.org/TR/motion-sensors/">30 Aug 2017</a></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div class="subheader">Environment Sensors <span>Environment sensors that extend the Generic Sensor API.</span></div>
+
+    <div><a href="https://w3c.github.io/ambient-light/">Ambient Light Sensor</a><br><a href="https://github.com/w3c/ambient-light" class="gh">w3c/ambient-light</a></div>
+    <div><a href="https://w3c.github.io/ambient-light/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-ambient-light-20171018/">18 Oct 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2018/CR-ambient-light-20180320/">20 Mar 2018</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/proximity/">Proximity Sensor</a><br><a href="https://github.com/w3c/proximity" class="gh">w3c/proximity</a></div>
+    <div><a href="https://w3c.github.io/proximity/">Editor's Draft</a></div>
+    <div class="current wd"><a href="https://www.w3.org/TR/proximity/">19 Jul 2016</a></div>
+    <div></div>
+    <div></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div class="subheader">Devices <span>Features that interact with device hardware.</span></div>
+
+    <div><a href="https://w3c.github.io/battery/">Battery Status API</a><br><a href="https://github.com/w3c/battery/" class="gh">w3c/battery</a></div>
+    <div><a href="https://w3c.github.io/battery/">Editor's Draft</a></div>
+    <div><a href="https://www.w3.org/TR/2011/WD-battery-status-20110915/">15 Sep 2011</a></div>
+    <div><a href="https://www.w3.org/TR/2014/WD-battery-status-20140828/">28 Aug 2014</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2016/CR-battery-status-20160707/">7 July 2016</a></div>
+    <div><a href="https://www.w3.org/TR/2016/PR-battery-status-20160329/">29 Mar 2016</a></div>
+    <div>Q1 2020</div>
+
+    <div><a href="https://w3c.github.io/wake-lock/">Wake Lock API</a><br><a href="https://github.com/w3c/wake-lock/" class="gh">w3c/wake-lock</a></div>
+    <div><a href="https://w3c.github.io/wake-lock/">Editor's Draft</a></div>
+    <div class="done"></div>
+    <div><a href="https://www.w3.org/TR/2017/WD-wake-lock-20171204/">4 Dec 2017</a></div>
+    <div class="current cr"><a href="https://www.w3.org/TR/2017/CR-wake-lock-20171214/">14 Dec 2017</a></div>
+    <div>Q4 2019</div>
+    <div>Q1 2020</div>
+
+    <div class="subheader">Completed <span>Specifications published as W3C Recommendations.</span></div>
+
+    <div><a href="https://w3c.github.io/vibration/">Vibration API</a><br><a href="https://github.com/w3c/vibration/" class="gh">w3c/vibration</a></div>
+    <div><a href="https://w3c.github.io/vibration/">Editor's Draft</a></div>
+    <div><a href="https://www.w3.org/TR/2011/WD-vibration-20111117/">17 Nov 2011</a></div>
+    <div><a href="https://www.w3.org/TR/2014/WD-vibration-20140619/">19 Jun 2014</a></div>
+    <div><a href="https://www.w3.org/TR/2014/CR-vibration-20140909/">9 Sep 2014</a></div>
+    <div><a href="https://www.w3.org/TR/2016/PER-vibration-20160818/">18 Aug 2016</a></div>
+    <div class="current rec"><a href="https://www.w3.org/TR/2016/REC-vibration-20161018/">18 Oct 2016</a></div>
+
+    <div><a href="https://w3c.github.io/html-media-capture/">HTML Media Capture</a><br><a href="https://github.com/w3c/html-media-capture/" class="gh">w3c/html-media-capture</a></div>
+    <div><a href="https://w3c.github.io/html-media-capture/">Editor's Draft</a></div>
+    <div><a href="https://www.w3.org/TR/2012/WD-html-media-capture-20121213/">13 Dec 2012</a></div>
+    <div><a href="https://www.w3.org/TR/2014/WD-html-media-capture-20140619/">19 Jun 2014</a></div>
+    <div><a href="https://www.w3.org/TR/2017/CR-html-media-capture-20170831/">31 Aug 2017</a></div>
+    <div><a href="https://www.w3.org/TR/2017/PR-html-media-capture-20171128/">28 Nov 2017</a></div>
+    <div class="current rec"><a href="https://www.w3.org/TR/2018/REC-html-media-capture-20180201/">1 Feb 2018</a></div>
+
 </div>
