@@ -1,7 +1,7 @@
 pages:
 
 - title: Home
-  url: site.baseurl
+  url: /das-wg
 
 - title: Roadmap
   url: roadmap
