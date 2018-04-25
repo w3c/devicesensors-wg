@@ -2,9 +2,12 @@ pages:
 
 - title: Home
   url: /das-wg
+  html: /
 
 - title: Roadmap
   url: roadmap
+  html: /roadmap.html
 
 - title: History
   url: history
+  html: /history.html
