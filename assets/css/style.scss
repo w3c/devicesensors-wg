@@ -31,6 +31,15 @@ header p {
     width: auto;
 }
 
+ul#navigation {
+    list-style: none;
+    padding: 0 20px 0 20px;
+    box-shadow: 0.3em 0.3em 0 rgba(0,0,0,.1);
+    border: 1px solid #ccc;
+    width: fit-content;
+    border-radius: 5px;
+}
+
 ul#navigation > li.active a {
     font-weight: bold;
     cursor: default;
