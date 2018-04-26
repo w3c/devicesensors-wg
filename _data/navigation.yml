@@ -8,6 +8,22 @@ pages:
   url: roadmap
   html: /roadmap.html
 
-- title: History
-  url: history
-  html: /history.html
+- title: Participate
+  url: participate
+  html: /participate.html
+
+- title: Meetings
+  url: meetings
+  html: /meetings.html
+
+- title: Communications
+  url: communications
+  html: /communications.html
+
+- title: Historical
+  url: historical
+  html: /historical.html
+
+- title: Administrativia
+  url: admin
+  html: /admin.html

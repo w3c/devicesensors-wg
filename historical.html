@@ -1,0 +1,481 @@
+---
+layout: default
+---
+
+<style>
+    table {
+        font-size: 13px;
+    }
+</style>
+
+<p>
+  The Working Group was first <a href=
+  "https://www.w3.org/2009/05/DeviceAPICharter">chartered in July
+  2009</a> as the &#8220;Device APIs &amp; Policy Working Group&#8221;,
+  as a follow-up to the <a href=
+  "https://www.w3.org/2008/security-ws/">workshop on Security for Access
+  to Device APIs from the Web</a> (<a href=
+  "https://www.w3.org/2008/security-ws/report">Workshop Report</a> and
+  <a href="https://www.w3.org/2008/security-ws/papers/">Position
+  Papers</a>) held in December 2008, then <a href=
+  "https://www.w3.org/2011/07/DeviceAPICharter">rechartered in August
+  2011</a> under the name &#8220;Device APIs Working Group&#8221;, and
+  rechartered again in <a href=
+  "https://www.w3.org/2016/03/device-sensors-wg-charter.html">March
+  2016</a> under the name &#8220;Device and Sensors Working Group&#8221;.
+</p>
+<p id="policy-history">
+  The group used to work on the following documents, but their
+  development has been stopped:
+</p>
+<ul>
+  <li>
+    <a href=
+    "https://dev.w3.org/2009/dap/policy/Framework.html"><cite>Policy
+    Framework</cite> last editors draft</a>
+  </li>
+  <li>
+    <a href=
+    "https://dev.w3.org/2009/dap/policy/Profile.html"><cite>Policy Markup
+    for Device APIs</cite> last editors draft</a>
+  </li>
+</ul>
+<p id="inputs">
+  The following were submitted as starting points for this group's
+  deliverables:
+</p>
+<ul>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/calendar.html">
+    Nokia's Calendar API</a>
+  </li>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/camera.html">
+    Nokia's Camera API</a>
+  </li>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/contacts.html">
+    Nokia's Contacts API</a>
+  </li>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/messaging.html">
+    Nokia's Messaging API</a>
+  </li>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/sysinfo.html">
+    Nokia's System Info API</a>
+  </li>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Apr/att-0001/appendixa.html">
+    Nokia's DeviceException Interface</a>
+  </li>
+  <li>
+    <!-- <a href="https://bondi.omtp.org/1.1/apis/index.html">BONDI -->
+    <!-- 1.1 APIs</a> (including Application Launcher, Messaging, -->
+    <!-- User Interaction, File System, Gallery, Device Status, -->
+    <!-- Application Configuration Camera, Communication Log, -->
+    <!-- Contact, Calendar, Task) -->
+    BONDI 1.1 APIs (including Application Launcher, Messaging, User
+    Interaction, File System, Gallery, Device Status, Application
+    Configuration Camera, Communication Log, Contact, Calendar, Task)
+  </li>
+  <li>
+    <!-- <a href="https://bondi.omtp.org/1.11/security/BONDI_Architecture_and_Security_v1.1.pdf"> -->
+    <!-- BONDI Architecture and Security 1.11 Approved Release</a> -->
+    <!-- (same as 1.1; see also <a href="https://bondi.omtp.org/1.01/security/BONDI_Architecture_and_Security_v1_01.pdf"> -->
+    <!-- 1.01</a>, <a href="https://bondi.omtp.org/1.0/security/BONDI_Architecture_and_Security_v1.0.pdf"> -->
+    <!-- 1.0</a>) -->
+    BONDI Architecture and Security 1.11 Approved Release (same as 1.1;
+    see also 1.01 and 1.0)
+  </li>
+  <li>
+    <!-- <a href="https://bondi.omtp.org/1.11/">BONDI 1.11 -->
+    <!-- Specifications</a> (and also <a href="https://bondi.omtp.org/1.1/">BONDI 1.1</a> and <a href="https://bondi.omtp.org/1.01/">BONDI 1.01</a> and <a href="https://bondi.omtp.org/1.0/">BONDI 1.0</a> specifications) -->
+    BONDI 1.11 Specifications (and also BONDI 1.1, 1.01 and 1.0
+    specifications)
+  </li>
+</ul>
+<p>
+  Also relevant are the following:
+</p>
+<ul>
+  <li>
+    <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2009Nov/att-0012/SecurityPolicy_09.pdf">
+    Policy Based Device Access Security</a>. (earlier workshop paper:
+    <a href=
+    "https://www.w3.org/2008/security-ws/papers/SecurityPolicyNokia.pdf">Web
+    Runtime Policy Based Security</a>)
+  </li>
+</ul>
+<p>
+  The following documents are obsolete and should not be referenced:
+</p>
+<table id="obsolete" class="full">
+  <thead>
+    <tr>
+<td colspan="8" class="tbody_title">
+  Obsolete documents
+</td>
+    </tr>
+    <tr>
+<th>
+  Specification
+</th>
+<th>
+  Internal draft
+</th>
+<th>
+  Public Working draft
+</th>
+<th>
+  Stable draft (Last Call)
+</th>
+<th>
+  Implementors feedback (<abbr title=
+  "Candidate Recommendation">CR</abbr>)
+</th>
+<th>
+  Standard (<abbr title="Recommendation">Rec</abbr>)
+</th>
+<th>
+  Test Suite
+</th>
+<th>
+  Notes
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+<th scope="row">
+  APIs Design Patterns
+</th>
+<td>
+  <a href="https://dev.w3.org/2009/dap/design-patterns/">05 Jul
+  2011</a>
+</td>
+<td colspan="6"></td>
+    </tr>
+  </tbody>
+</table>
+<table class="full">
+  <tr>
+    <td id="informative" colspan="4" class="tbody_title">
+Informative documents
+    </td>
+  </tr>
+  <tr>
+    <th>
+Specification
+    </th>
+    <th>
+Internal draft
+    </th>
+    <th>
+W3C Working Group Note
+    </th>
+    <th>
+Notes
+    </th>
+  </tr>
+  <tbody>
+    <tr>
+<th>
+  MediaStream Capture Scenarios
+</th>
+<td>
+  <a href=
+  "https://dvcs.w3.org/hg/dap/raw-file/default/media-stream-capture/scenarios.html">
+  04 Jan 2013</a>
+</td>
+<td class="current">
+  <a href=
+  "https://www.w3.org/TR/2012/WD-capture-scenarios-20120306/">6 Mar
+  2012</a>
+</td>
+<td>
+  <a href="#tf">[TF]</a>
+</td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Device API Access Control Use Cases and
+  Requirements</strong>
+</th>
+<td>
+  <a href="https://dev.w3.org/2009/dap/policy-reqs/">16 Mar
+  2011</a>
+</td>
+<td class="current">
+  <a href=
+  "https://www.w3.org/TR/2011/NOTE-dap-policy-reqs-20110317/">17
+  March 2011</a>
+</td>
+<td></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Privacy Requirements</strong>
+</th>
+<td>
+  <a href="https://dev.w3.org/2009/dap/privacy-reqs/">23 Jun
+  2010</a>
+</td>
+<td class="current">
+  <a href=
+  "https://www.w3.org/TR/2010/NOTE-dap-privacy-reqs-20100629/">29
+  Jun 2010</a>
+</td>
+<td></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Web Application Privacy Best Practices</strong>
+</th>
+<td>
+  <a href="https://dev.w3.org/2009/dap/privacy-practices/">28 Jun
+  2012</a>
+</td>
+<td class="current">
+  <a href=
+  "https://www.w3.org/TR/2012/NOTE-app-privacy-bp-20120703/">3 July
+  2012</a>
+</td>
+<td></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Web Intents</strong> (service discovery and light-weight
+  RPC mechanism for web apps)
+</th>
+<td>
+  <a href=
+  "https://dvcs.w3.org/hg/web-intents/raw-file/default/spec/Overview-respec.html">
+  4 Sep 2012</a>
+</td>
+<td class="current">
+  <a href=
+  "https://www.w3.org/TR/2013/NOTE-web-intents-20130523/">23 May
+  2013</a>
+</td>
+<td>
+  Work happens in the <a href="#webintents">Web Intents task
+  force</a>
+</td>
+    </tr>
+  </tbody>
+</table>
+<table class="full">
+  <thead>
+    <tr>
+<td id="exploratory" colspan="3" class="tbody_title">
+  Exploratory work
+</td>
+    </tr>
+    <tr>
+<th>
+  Specification
+</th>
+<th>
+  Internal draft
+</th>
+<th>
+  Note
+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+<th scope="row">
+  <strong>Privacy Ruleset</strong>
+</th>
+<td>
+  <a href="https://dev.w3.org/2009/dap/privacy-rulesets/">6 Oct
+  2010</a>
+</td>
+<td colspan="1"></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Ambient Temperature Events</strong>
+</th>
+<td>
+  <a href=
+  "https://dvcs.w3.org/hg/dap/raw-file/default/temperature/Overview.html">
+  16 Jul 2012</a>
+</td>
+<td colspan="1"></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Ambient Humidity Events</strong>
+</th>
+<td>
+  <a href=
+  "https://dvcs.w3.org/hg/dap/raw-file/default/humidity/Overview.html">
+  13 Jul 2012</a>
+</td>
+<td colspan="1"></td>
+    </tr>
+    <tr>
+<th scope="row">
+  <strong>Atmospheric Pressure Events</strong>
+</th>
+<td>
+  <a href=
+  "https://dvcs.w3.org/hg/dap/raw-file/default/pressure/Overview.html">
+  13 Jul 2012</a>
+</td>
+<td colspan="1"></td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  See also the <a href=
+  "https://www.w3.org/TR/tr-groups-all#tr_Device_APIs_Working_Group">list
+  of the Device and Sensors published Technical Reports</a>.
+</p>
+<p>
+  As part of its technical work, the group ensures that its APIs are
+  reviewed according to a <a href=
+  "https://www.w3.org/2009/dap/wiki/ApiCheckList">checklist of good
+  practices for APIs</a>.
+</p>
+<p>
+  The history and past revisions of the documents drafts are available in
+  the <a href="https://dev.w3.org/cvsweb/2009/dap/">W3C public CVS
+  server</a>.
+</p>
+<p>
+  We use the <a href="https://github.com/w3c/web-platform-tests/">W3C
+  Github Web Platform Tests repository</a> to manage our test suites,
+  whose latest versions are available on <a href=
+  "https://w3c-test.org/">W3C Test Server, w3c-test.org</a>.
+</p>
+<div id="shelved">
+  <p>
+    The Working Group has currently <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2011Nov/0026.html">
+    shelved</a> the following work items, waiting for a better overall
+    approach to emerge:
+  </p>
+  <ul>
+    <li>
+<a href="https://www.w3.org/TR/discovery-api/">Network Service
+Discovery</a> (HTTP-based services advertised via common discovery
+protocols within the current network), previous published as WD on
+<a href="https://www.w3.org/TR/2014/WD-discovery-api-20140220/">Feb
+20 2014</a>; <a href=
+"https://dvcs.w3.org/hg/dap/file/tip/discovery-api/">history on W3C
+mercurial server</a>
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/calendar-api/">Calendar API</a>
+(Previously published as a WD on <a href=
+"https://www.w3.org/TR/2011/WD-calendar-api-20110419/">19 Apr
+2011</a>) Note, Dependency on TZDate.
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/messaging-api/">Messaging API</a>
+    </li>
+    <li>
+<a href=
+"https://www.w3.org/TR/2014/NOTE-netinfo-api-20140410/">Network
+Information API</a> (brought back to incubation to the Web
+Incubator Community Group)
+    </li>
+    <li>
+<a href=
+"https://dvcs.w3.org/hg/dap/raw-file/default/sensor-api/Overview.html">
+Sensor API</a>
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/system-info-api/">System Information
+API</a>
+    </li>
+    <li>Tasks API (may get merged into Calendar API)
+    </li>
+    <li>
+<p>
+  <a href="https://dev.w3.org/2009/dap/api-reqs/">Device APIs
+  Requirements and Design Decisions</a>
+</p>
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/gallery/">Pick Media Intent</a>
+(access to a user's media gallery from inside a Web application),
+(Previously published as a FPWD on <a href=
+"https://www.w3.org/TR/2012/WD-gallery-20120712/">12 July
+2012</a>).
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/contacts-api/">Pick Contacts
+Intent</a> (access to a user's contacts from inside a Web
+application). (Previously published as a FPWD on <a href=
+"https://www.w3.org/TR/2012/WD-contacts-api-20120712/">12 Jul
+2012</a>).
+    </li>
+    <li>
+<a href="https://www.w3.org/TR/webintents-local-services/">Web
+Intents Addendum - Local Services</a> (how Web Intents enabled User
+Agents can discover and communicate with local Web Intents
+Services.) (Previously published as a FPWD on <a href=
+"https://www.w3.org/TR/2012/WD-webintents-local-services-20121004/">
+04 Oct 2012</a>.)
+    </li>
+  </ul>
+  <p>
+    The Working Group is <strong>not planning</strong> to work on the
+    following items:
+  </p>
+  <ul>
+    <li>Application configuration: already possible through
+    <code>localStorage</code>, and with the <code>Widget</code> interface
+    APIs
+    </li>
+    <li>Notification and <a href=
+    "https://dev.w3.org/2009/dap/perms/FeaturePermissions.html">Feature
+    Permissions</a>: see the <a href=
+    "https://www.w3.org/2010/web-notifications/">Web Notification Working
+    Group</a>
+    </li>
+    <li>
+<a href=
+"https://dev.w3.org/2009/dap/file-system/file-writer.html">File
+Writing</a> and <a href=
+"https://dev.w3.org/2009/dap/file-system/file-dir-sys.html">Filesystems</a>
+have been <a href=
+"https://lists.w3.org/Archives/Public/public-device-apis/2010Jun/0180.html">
+moved to the Web Applications Working Group</a> in June 2010
+    </li>
+    <li>A Communication Log API, due to lack of direct interest in that
+    feature
+    </li>
+    <li>Audio Volume (read only) and Beep, <a href=
+    "https://lists.w3.org/Archives/Public/public-device-apis/2011Jul/att-0098/minutes-2011-07-20.html#item09">
+WG Not planning to work on these</a>
+    </li>
+    <li>
+<a href=
+"https://www.w3.org/TR/2015/NOTE-api-perms-20150714/">Permissions
+for Device API Access</a> has been moved to the <a href=
+"https://www.w3.org/2011/webappsec/">Web Application Security
+Working Group</a> which has published <a href=
+"https://www.w3.org/TR/permissions/">The Permissions API</a>.
+    </li>
+  </ul>
+</div>
+<p id="future">
+  APIs that have been suggested as worth consideration for the group but
+  not currently prioritised (and therefore not up for discussion) are
+  kept in the <a href=
+  "https://www.w3.org/2009/dap/wiki/FutureWork">FutureWork page</a> on
+  the group's wiki.
+</p>
