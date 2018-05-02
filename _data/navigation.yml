@@ -1,0 +1,29 @@
+pages:
+
+- title: Home
+  url: /das-wg
+  html: /
+
+- title: Roadmap
+  url: roadmap
+  html: /roadmap.html
+
+- title: Participate
+  url: participate
+  html: /participate.html
+
+- title: Meetings
+  url: meetings
+  html: /meetings.html
+
+- title: Communications
+  url: communications
+  html: /communications.html
+
+- title: Historical
+  url: historical
+  html: /historical.html
+
+- title: Administrativia
+  url: admin
+  html: /admin.html
