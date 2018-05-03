@@ -113,6 +113,11 @@ layout: default
         background: rgba(0, 91, 156, 1);
         color: white;
     }
+    #roadmap > div.rec > a {
+        /* workaround :visited selector limitation */
+        -webkit-text-stroke: 0.1px #000;
+        -webkit-text-fill-color: #fff;
+    }
 </style>
 
 <div id="roadmap">
