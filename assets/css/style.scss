@@ -46,6 +46,16 @@ ul#navigation > li.active a {
     cursor: default;
 }
 
+div#logo {
+    background-image: url(../../assets/svg/mobile-sensors.svg);
+    background-size: 80px 80px;
+    width: 80px;
+    height: 80px;
+    margin: 15px;
+    float: right;
+    opacity: 0.5;
+}
+
 @media print, screen and (max-width: 740px){
     body {
         padding: 0;
