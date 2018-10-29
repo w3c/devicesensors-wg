@@ -4,4 +4,4 @@ email: public-device-apis@w3.org
 description: > # this means to ignore newlines until "theme:"
   Enables web apps to interact with device hardware.
 theme: jekyll-theme-modernist
-baseurl: "/devicesensors-wg" # the subpath of the site
+baseurl: "/das" # the subpath of the site
