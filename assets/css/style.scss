@@ -3,6 +3,10 @@
 
 @import "{{ site.theme }}";
 
+html {
+    background: #505860;
+}
+
 header ul {
     background: #1a5e9a;
     border-width: .65rem .7rem .6rem;
@@ -29,6 +33,7 @@ header ul li {
 
 header p {
     width: auto;
+    color: #5B6874;
 }
 
 ul#navigation {
