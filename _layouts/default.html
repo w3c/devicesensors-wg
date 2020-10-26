@@ -10,8 +10,8 @@
     </script>
     <link rel="canonical" href="https://www.w3.org/das{{ page.url | replace:'.html',''}}">
 
-    <link rel="stylesheet" href="https://www.w3.org{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <script src="{{ 'https://www.w3.org/das/assets/js/scale.fix.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{page.base}}{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <script src="{{page.base}}{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--[if lt IE 9]>
