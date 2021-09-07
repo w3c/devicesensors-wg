@@ -63,6 +63,13 @@ ul#navigation > li.active a {
     font-weight: bold;
     cursor: default;
 }
+ul#navigation > li a:before {
+    content: "⚪";
+}
+
+ul#navigation > li.active a:before {
+    content: "📍";
+}
 
 div#logo {
     background-image: url(../../assets/svg/mobile-sensors.svg);
