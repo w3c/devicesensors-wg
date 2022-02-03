@@ -72,13 +72,13 @@ ul#navigation > li.active a:before {
 }
 
 div#logo {
-    background-image: url(../../assets/svg/mobile-sensors.svg);
-    background-size: 80px 80px;
-    width: 80px;
-    height: 80px;
+    background-image: url(../../assets/svg/daswg-logo.svg);
+    background-size: 150px 150px;
+    width: 150px;
+    height: 150px;
     margin: 15px;
     float: right;
-    opacity: 0.5;
+    opacity: 1.0;
 }
 
 @media print, screen and (max-width: 740px){
