@@ -127,12 +127,9 @@ title: Roadmap
 <script>
 window.onload = (event) => {
 
-// Authorized only if the origin domain (using CORS Origin header) matches w3.org
-const apiKey = '7sw93tdlepkw4wc08gosoo884wk8oso';
-
 async function getLatestDate(shortname) {
     if (!shortname) throw('No shortname defined.');
-    const response = await fetch(`https://api.w3.org/specifications/${shortname}/versions/latest?apikey=${apiKey}`);
+    const response = await fetch(`https://api.w3.org/specifications/${shortname}/versions/latest`);
     const json = await response.json();
     return json.date;
 }
