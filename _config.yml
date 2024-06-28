@@ -3,5 +3,7 @@ title: Devices and Sensors Working&nbsp;Group
 email: public-device-apis@w3.org
 description: > # this means to ignore newlines until "theme:"
   Enables web apps to interact with device-centric capabilities.
-theme: jekyll-theme-modernist
 baseurl: "/das" # the subpath of the site
+remote_theme: deniak/w3c-jekyll-theme
+plugins:
+- jekyll-remote-theme
