@@ -5,6 +5,6 @@ description: > # this means to ignore newlines until "theme:"
   Enables web apps to interact with device-centric capabilities.
 member_only: false
 baseurl: "/das" # the subpath of the site
-remote_theme: deniak/w3c-jekyll-theme
+remote_theme: w3c/w3c-jekyll-theme
 plugins:
 - jekyll-remote-theme
