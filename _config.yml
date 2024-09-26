@@ -1,5 +1,5 @@
 # Site settings
-title: Devices and Sensors Working&nbsp;Group
+title: Devices and Sensors Working Group
 email: public-device-apis@w3.org
 description: > # this means to ignore newlines until "theme:"
   Enables web apps to interact with device-centric capabilities.
