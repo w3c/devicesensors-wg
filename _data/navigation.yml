@@ -5,25 +5,25 @@ pages:
   html: /
 
 - title: Roadmap
-  url: roadmap
+  url: /das/roadmap
   html: /roadmap.html
 
 - title: Participate
-  url: participate
+  url: /das/participate
   html: /participate.html
 
 - title: Meetings
-  url: meetings
+  url: /das/meetings
   html: /meetings.html
 
 - title: Communications
-  url: communications
+  url: /das/communications
   html: /communications.html
 
 - title: Historical
-  url: historical
+  url: /das/historical
   html: /historical.html
 
 - title: Administrativia
-  url: admin
+  url: /das/admin
   html: /admin.html
